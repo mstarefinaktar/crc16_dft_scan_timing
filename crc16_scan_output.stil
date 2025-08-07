@@ -1,0 +1,171 @@
+STIL 1.0;
+
+Signals {
+  clk, reset, enable, scan_en, scan_in, scan_out;
+};
+
+WaveformTable basic_wave {
+  Period 10000;
+
+  Waveforms {
+    "W1" {
+      clk     : P P;
+      reset   : L;
+      enable  : L;
+      scan_en : H;
+      scan_in : X;
+      scan_out: C;
+    }
+  }
+}
+
+Pattern Scan_Chain_Readout {
+  WaveformTable basic_wave;
+
+  PatternBurst {
+    V {
+      clk     = L;
+      reset   = L;
+      enable  = L;
+      scan_en = H;
+      scan_in = 0;
+      scan_out = 1;
+    };
+    V {
+      clk     = L;
+      reset   = L;
+      enable  = L;
+      scan_en = H;
+      scan_in = 0;
+      scan_out = 1;
+    };
+    V {
+      clk     = L;
+      reset   = L;
+      enable  = L;
+      scan_en = H;
+      scan_in = 0;
+      scan_out = 1;
+    };
+    V {
+      clk     = L;
+      reset   = L;
+      enable  = L;
+      scan_en = H;
+      scan_in = 0;
+      scan_out = 1;
+    };
+    V {
+      clk     = L;
+      reset   = L;
+      enable  = L;
+      scan_en = H;
+      scan_in = 0;
+      scan_out = 1;
+    };
+    V {
+      clk     = L;
+      reset   = L;
+      enable  = L;
+      scan_en = H;
+      scan_in = 0;
+      scan_out = 1;
+    };
+    V {
+      clk     = L;
+      reset   = L;
+      enable  = L;
+      scan_en = H;
+      scan_in = 0;
+      scan_out = 1;
+    };
+    V {
+      clk     = L;
+      reset   = L;
+      enable  = L;
+      scan_en = H;
+      scan_in = 0;
+      scan_out = 1;
+    };
+    V {
+      clk     = L;
+      reset   = L;
+      enable  = L;
+      scan_en = H;
+      scan_in = 0;
+      scan_out = 1;
+    };
+    V {
+      clk     = L;
+      reset   = L;
+      enable  = L;
+      scan_en = H;
+      scan_in = 0;
+      scan_out = 1;
+    };
+    V {
+      clk     = L;
+      reset   = L;
+      enable  = L;
+      scan_en = H;
+      scan_in = 0;
+      scan_out = 1;
+    };
+    V {
+      clk     = L;
+      reset   = L;
+      enable  = L;
+      scan_en = H;
+      scan_in = 0;
+      scan_out = 1;
+    };
+    V {
+      clk     = L;
+      reset   = L;
+      enable  = L;
+      scan_en = H;
+      scan_in = 0;
+      scan_out = 1;
+    };
+    V {
+      clk     = L;
+      reset   = L;
+      enable  = L;
+      scan_en = H;
+      scan_in = 0;
+      scan_out = 1;
+    };
+    V {
+      clk     = L;
+      reset   = L;
+      enable  = L;
+      scan_en = H;
+      scan_in = 0;
+      scan_out = 1;
+    };
+    V {
+      clk     = L;
+      reset   = L;
+      enable  = L;
+      scan_en = H;
+      scan_in = 0;
+      scan_out = 1;
+    };
+    V {
+      clk     = L;
+      reset   = L;
+      enable  = L;
+      scan_en = H;
+      scan_in = 0;
+      scan_out = 0;
+    };
+    V {
+      clk     = L;
+      reset   = L;
+      enable  = L;
+      scan_en = H;
+      scan_in = 0;
+      scan_out = 0;
+    };
+  }
+}
