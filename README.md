@@ -58,7 +58,8 @@ python csv_to_stil_scan.py scan_crc16.csv scan_crc16.stil
 
 Below is the waveform showing scan chain readout of internal CRC register bits using GTKWave:
 
-![CRC SCAN](./crc _scan.PNG)
+![CRC SCAN](./crc%20_scan.PNG)
+
 
 The `scan_en` signal is asserted high to shift out internal CRC bits.
 
