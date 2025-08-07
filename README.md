@@ -54,6 +54,21 @@ python csv_to_stil_scan.py scan_crc16.csv scan_crc16.stil
 
 ---
 
+📷 Waveform (GTKWAVE View)
+Below is the waveform showing scan chain readout of internal CRC register bits using GTKWave:
+
+![CRC SCAN](./crc_scan.PNG)
+
+The scan_en signal is asserted high to shift out internal CRC bits.
+
+The scan_out line shows the serialized CRC register output, one bit per cycle.
+
+This provides observability into the CRC internals for DFT/debug purposes.
+
+
+---
+
+
 ## 🔧 Key Features
 
 * **Scan chain readout** of CRC register (1-bit shift at a time)
